@@ -1,11 +1,11 @@
 {
-  "name": "angular-electron",
-  "version": "2.1.1",
+  "name": "yvon",
+  "version": "0.1.0",
   "description": "Angular 5 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
+  "homepage": "https://github.com/ycome/yvon.git",
   "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
+    "name": "a",
+    "email": "a@a.com"
   },
   "keywords": [
     "angular",
