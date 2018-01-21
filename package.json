@@ -1,6 +1,12 @@
 {
-  "name": "ang-electron",
-  "version": "0.0.0",
+  "name": "yvon",
+  "productName": "yvon",
+  "description": "app for ynov, yvon bot",
+  "author": {
+    "name": "Louis AMSTUTZ",
+    "email": "louis.amstutz@gmail.com"
+  },
+  "version": "0.3.2",
   "license": "MIT",
   "main": "main.js",
   "scripts": {
@@ -10,7 +16,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "electron": "ng build && electron .",
-    "electron-aot": "ng build --prod && electron ."
+    "electron-aot": "ng build --prod && electron .",
+    "package:linux": "ng build && electron-packager . --overwrite --platform=linux --arch=x64 --out=out",
+    "deb64": "electron-installer-debian --src out/yvon-linux-x64/ --dest out/installers/ --arch amd64"
   },
   "private": true,
   "dependencies": {
@@ -39,6 +47,8 @@
     "api-ai-javascript": "2.0.0-beta.21",
     "codelyzer": "4.0.1",
     "electron": "1.7.10",
+    "electron-installer-debian": "^0.8.0",
+    "electron-packager": "10.1.1",
     "jasmine-core": "2.8.0",
     "jasmine-spec-reporter": "4.2.1",
     "karma": "2.0.0",
