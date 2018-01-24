@@ -5,6 +5,10 @@
 /dist-server
 /tmp
 /out-tsc
+/release-builds
+/out/*
+!/out/installers
+/build
 
 # dependencies
 /node_modules
