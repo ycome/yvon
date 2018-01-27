@@ -12,7 +12,7 @@
   "scripts": {
     "ng": "ng",
     "start": "bash run.bash",
-    "postinstall": "electron-builder --dir",
+    "install": "electron-builder --dir",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
