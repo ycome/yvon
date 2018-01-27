@@ -18,7 +18,9 @@
     "electron": "ng build && electron .",
     "electron-aot": "ng build --prod && electron .",
     "package:linux": "ng build && electron-packager . --overwrite --platform=linux --arch=x64 --out=out",
-    "deb64": "electron-installer-debian --src out/yvon-linux-x64/ --dest out/installers/ --arch amd64"
+    "package:windows": "ng build && electron-packager . --overwrite --platform=win32 --arch=x64 --out=out",
+    "deb64": "electron-installer-debian --src out/yvon-linux-x64/ --dest out/installers/ --arch amd64",
+    "exe": "electron-installer-windows --src out/app-win32-x64/ --dest out/installers/"
   },
   "private": true,
   "dependencies": {
@@ -48,6 +50,7 @@
     "codelyzer": "4.0.1",
     "electron": "1.7.10",
     "electron-installer-debian": "^0.8.0",
+    "electron-installer-windows": "^0.2.0",
     "electron-packager": "10.1.1",
     "jasmine-core": "2.8.0",
     "jasmine-spec-reporter": "4.2.1",
