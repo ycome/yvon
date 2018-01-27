@@ -11,8 +11,8 @@
   "main": "main.js",
   "scripts": {
     "ng": "ng",
-    "start": "bash run.bash",
-    "install": "electron-builder --dir",
+    "start": "bash start.sh",
+    "installoff": "electron-builder --dir",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
