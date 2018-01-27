@@ -11,7 +11,8 @@
   "main": "main.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "bash run.bash",
+    "postinstall": "electron-builder --dir",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -21,6 +22,12 @@
     "package:windows": "ng build && electron-packager . --overwrite --platform=win32 --arch=x64 --out=out",
     "deb64": "electron-installer-debian --src out/yvon-linux-x64/ --dest out/installers/ --arch amd64",
     "exe": "electron-installer-windows --src out/app-win32-x64/ --dest out/installers/"
+  },
+  "build": {
+    "appId": "com.ynov.yvon",
+    "mac": {
+      "category": "utilitary"
+    }
   },
   "private": true,
   "dependencies": {
@@ -49,6 +56,7 @@
     "api-ai-javascript": "2.0.0-beta.21",
     "codelyzer": "4.0.1",
     "electron": "1.7.10",
+    "electron-builder": "19.55.2",
     "electron-installer-debian": "^0.8.0",
     "electron-installer-windows": "^0.2.0",
     "electron-packager": "10.1.1",
