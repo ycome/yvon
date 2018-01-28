@@ -2,7 +2,7 @@
 # see more about dockerfile templates here: http://docs.resin.io/deployment/docker-templates/
 # and about resin base images here: http://docs.resin.io/runtime/resin-base-images/
 # Note the node:slim image doesn't have node-gyp
-FROM resin/raspberry-pi-node:7
+FROM resin/raspberry-pi-node:8.9.3
 
 # Install other apt deps
 RUN apt-get update && apt-get install -y \

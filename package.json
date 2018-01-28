@@ -11,7 +11,7 @@
   "main": "main.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng build && electron .",
+    "start": "ng build && electron --js-flags=\"--max_old_space_size=4096\" .",
     "installoff": "electron-builder --dir",
     "test": "ng test",
     "lint": "ng lint",
