@@ -13,4 +13,4 @@ rm /tmp/.X0-lock &>/dev/null || true
 
 /usr/src/app/node_modules/@angular/cli/bin/ng build
 
-startx /usr/src/app/node_modules/electron/dist/electron --js-flags="--max_old_space_size=4096" /usr/src/app/ --enable-logging
+startx /usr/src/app/node_modules/electron/dist/electron /usr/src/app/ --enable-logging --js-flags="--max_old_space_size=4096"
