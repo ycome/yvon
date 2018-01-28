@@ -44,7 +44,7 @@ COPY package.json package.json
 
 # Install npm modules for the application
 RUN JOBS=MAX npm install --production --unsafe-perm \
-	&& npm cache clean && rm -rf /tmp/*
+	&& npm cache clean --force && rm -rf /tmp/*
 
 # Move app to filesystem
 COPY . ./
